@@ -22,6 +22,7 @@
 		if (group && group.length > 0)
 		{
 			group.addClass('has-error').removeClass('has-success');
+			$(element).parent().find('.form-control-feedback').removeClass('glyphicon-ok').addClass('glyphicon-remove');
 		}
 	}
 
@@ -31,6 +32,7 @@
 		if (group && group.length > 0)
 		{
 			group.addClass('has-success').removeClass('has-error');
+			$(element).parent().find('.form-control-feedback').removeClass('glyphicon-remove').addClass('glyphicon-ok');
 		}
 	}
 
